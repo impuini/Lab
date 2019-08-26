@@ -1,0 +1,33 @@
+ <!DOCTYPE>
+<html>
+<head>
+<center>
+	<title>Sq and cube</title>
+	<h1>Squares and cubes from 0-10</h1>
+	<style>
+		table, th, td {
+  border: 1px solid black;
+  width=100%;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+}
+table,th,td{
+background-color: #abcdef;
+padding: 10px;
+}
+	</style>
+</head>
+<body>
+<center>
+<script>
+	document.write("<table><tr><td>Number</td><td>Square</td><td>Cube</td></tr>")
+	for(var n=0;n<=10;n++)
+	{
+		document.write("<tr><td>"+n+"</td><td>"+n*n+"</td><td>"+n*n*n+"</td></tr>")
+	}
+	document.write("</table>")
+</script>
+</body>
+</html>

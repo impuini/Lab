@@ -1,0 +1,38 @@
+<html>
+<body>
+<div style="margin-top: 200px;" align="center">
+<h1 style="font-size: 5px; color: red;"></h1>
+</div>
+<script>
+	var text = document.querySelector('h1');('h1');
+	var font = 8;
+	var flag = 0;
+	function inc(){
+		font++;
+		text.style.fontSize = font;
+		text.style.color = "red";
+		text.textContent="TEXT-INCRESE";  
+		if(font==100){
+		flag=1;
+		}
+	}
+	function dec(){
+		font--;
+		text.style.fontSize = font;
+		text.style.color = "blue";
+		text.textContent="TEXT-SHRINKING";
+		if(font==100){
+		flag=0;
+		}
+	}
+	var time = setInterval(function(){
+		if(flag==1){
+			dec();
+		}
+		if(flag==0){
+			inc();
+		}
+	}, 100);
+</script>
+</body>
+</html>
